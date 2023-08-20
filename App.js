@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import { AuthProvider, useAuth } from './app/context/AuthContext'
 import Home from './app/screens/Home'
 import Login from './app/screens/Login'
@@ -38,21 +38,3 @@ export const Layout = () => {
     </NavigationContainer>
   )
 }
-
-/*
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-<View style={styles.container}>
-  <Text>Log In:</Text>
-
-
-  <StatusBar style="auto" />
-</View>
-*/
